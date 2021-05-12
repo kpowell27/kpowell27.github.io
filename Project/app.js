@@ -5,35 +5,40 @@
 //creater a player 
 
 
-const suits=["Hearts", "Spades", "Diamonds", "Clubs"]
-const values = ['Ace', 'King', 'Queen', 'Jack',
-  '10', '9', '8', '7', '6',
-  '5', '4', '3', '2', '1'
-];
+class Card {
+  constructor(rank, suit) {
+      this.rank = rank;
+      this.suit = suit.toLowerCase();
+  }
 
-let deckOfCards =[];
-// deckOfCards.createnewDeckOfCards(suits, values);
-//Deck of cards funtion 
+  isCardRed() {
+      return ["hearts", "diamonds"].includes(this.suit.toLowerCase())
+  }
 
-for (let i = 0; i < 3; i++) {
-    for (let x = 0; x < values.length; x++) {
-        let card = { Value: values[x], Suit: suits[i] };
-        deckOfCards.push(card);
-    }
+  isCardAce() {
+      return this.rank == "ace";
+  }
+
+  // all card's secondary value is equal to their primary value, except the `ace` card
+  getPrimaryCardValue() {
+      if(this.rank=="king") {
+          return 10;
+      } else if(this.rank == "queen") {
+          return 10;
+      } else if(this.rank == "jack") {
+          return 10;
+      } else if(this.isCardAce()) {
+          return 1;
+      }
+  }
+
+  // all card's secondary value is equal to their primary value, except the `ace` card
+  getSecondaryCardValue() {
+      if(!this.isCardAce()) {
+          return this.getPrimaryCardValue();
+      } else {
+          return 11;   
+      }
+  }
 }
-// console.log(deckOfCards)
-
-// Shuffle card funtion 
-// used (https://medium.com/swlh/the-javascript-shuffle-62660df19a5d, for the shuffle funtion)
-
-for (let i = deckOfCards.length - 1; i > 1; i--) {
-  let x = Math.floor(Math.random() * i);
-  let temp = deckOfCards[i];
-  deckOfCards[i]  = deckOfCards[x];
-  deckOfCards[x] = (temp);
-}
-  
-console.log(deckOfCards)
- 
-// deck 
 
