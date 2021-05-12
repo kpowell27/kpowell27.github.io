@@ -166,7 +166,8 @@ class BlackJackGame {
 
     // Players decision 
       while (this.player.getHandTotal() <21){
-        let hitOrStand = prompt('Would you like to hit or stand');
+        // let hitOrStand = prompt('Would you like to hit or stand');
+        let hitOrStand = document.getElementById('user-input').value;
         if (hitOrStand == 'hit') {
           let topCard = deck.removeAndFetchTopMostCard();
           this.player.hit(topCard);
@@ -217,10 +218,20 @@ class BlackJackGame {
 
   }
 }
-  // given
+function startblackjack() {
+ // given
   let blackJackGame = new BlackJackGame();
-  
   // when    
   blackJackGame.play();
-  
-  
+}
+
+function hitMe() {
+	// pop a card from the deck to the current player
+	// check if current player new points are over 21
+	var card = deck.pop();
+	players[currentPlayer].Hand.push(card);
+	renderCard(card, currentPlayer);
+	updatePoints();
+	updateDeck();
+	check();
+}
