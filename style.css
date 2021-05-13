@@ -1,5 +1,5 @@
 body {
-	background-color: #3d3d3d;
+	background-color: #084202b6;
 }
 
 #id {
@@ -11,23 +11,26 @@ body {
 }
 
 .game {
-	width: 720px;
-	border: solid 1px #ddd;
+	width: 700px;
+	border: solid 1px;
 	margin: 0 auto;
-	background: #007e23;
-	border: solid 10px;
+	background: #e6ebe7;
+	border: solid 5px;
+	border-color: rgb(128, 187, 155);
 	text-align: center;
-	min-height: 430px;
-	font-size: 1.5em;
+	min-height: 700px;
+	font-size: 2.0em;
+	font-family:fantasy;
 }
 
 .btn {
-	border: none;
-	padding: 15px 30px;
+	border: 10px;
+	border-radius: 10px; 
+	padding: 5px 30px;
 	border-radius: 10px;
 	cursor: pointer;
-	background: #222;
-	color: white !important;
+	background: rgb(97, 139, 43);
+	color: white;
 	font-size: 1em;
 }
 
