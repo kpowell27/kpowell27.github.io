@@ -125,7 +125,7 @@ class BlackJackGameControls {
         let winner = this.blackJackGame.dealer;
         let dealerScore = this.blackJackGame.dealer.getHandTotal();
         let playerScore = this.blackJackGame.player.getHandTotal();
-        if (playerScore > dealerScore && playerScore < 22) {
+        if (playerScore > dealerScore && playerScore > 22) {
             winner = player;
         }
         document.getElementById("status").innerHTML = "Winner: Player " + winner.name;
