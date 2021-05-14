@@ -1,6 +1,6 @@
 class BlackJackGame {
     constructor() {
-        this.player = new BlackJackPlayer("Kayla");
+        this.player = new BlackJackPlayer("1");
         this.dealer = new BlackJackPlayer("Dealer");
         this.players = [this.player, this.dealer];
         this.currentPlayer = this.player;
