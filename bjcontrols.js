@@ -1,3 +1,4 @@
+// the purpose of this class is to manipulate the DOM by evaluating the `Game` state
 class BlackJackGameControls {
     constructor() {
         this.blackJackGame = null;
