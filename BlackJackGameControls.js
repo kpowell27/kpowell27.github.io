@@ -1,5 +1,5 @@
 // the purpose of this class is to manipulate the DOM by evaluating the `Game` state
-class BJControls {
+class BlackJackGameControls {
     constructor() {
         this.blackJackGame = null;
         document.getElementById("status").style.display = "none";

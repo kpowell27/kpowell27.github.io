@@ -32,5 +32,4 @@ class BlackJackPlayer {
         })
         return total;
     }
- 
 }
