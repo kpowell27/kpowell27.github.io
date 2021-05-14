@@ -1,5 +1,7 @@
+/* TO-DO: hide House hand (card backs?), reveal House hand after round, determine when tied, automate House hand's stay points, add responsive CSS. */
+
 body {
-	background-color: #084202b6;
+	background-color: #3d3d3d;
 }
 
 #id {
@@ -11,26 +13,23 @@ body {
 }
 
 .game {
-	width: 700px;
-	border: solid 1px;
+	width: 720px;
+	border: solid 1px #ddd;
 	margin: 0 auto;
-	background: #e6ebe7;
-	border: solid 5px;
-	border-color: rgb(128, 187, 155);
+	background: #007e23;
+	border: solid 10px;
 	text-align: center;
-	min-height: 700px;
-	font-size: 2.0em;
-	font-family:fantasy;
+	min-height: 430px;
+	font-size: 1.5em;
 }
 
 .btn {
-	border: 10px;
-	border-radius: 10px; 
-	padding: 5px 30px;
+	border: none;
+	padding: 15px 30px;
 	border-radius: 10px;
 	cursor: pointer;
-	background: rgb(97, 139, 43);
-	color: white;
+	background: #222;
+	color: white !important;
 	font-size: 1em;
 }
 
