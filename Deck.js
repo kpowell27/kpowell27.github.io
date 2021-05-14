@@ -20,6 +20,7 @@ class Deck {
     }
     
     // simulates shuffling a deck
+    
     shuffle() {
         for (let i = this.cards.length - 1; i > 1; i--) {
             let x = Math.floor(Math.random() * i);

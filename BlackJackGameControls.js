@@ -7,7 +7,7 @@ class BlackJackGameControls {
         this.blackJackGame = null;
         document.getElementById("status").style.display = "none";
     }
-
+    // start of the game  - create the view - render cards 
     startblackjack() {
         this.blackJackGame = new BlackJackGame();
         this.blackJackGame.play();
@@ -57,7 +57,7 @@ class BlackJackGameControls {
             });
         });
     }
-
+    // this is what the player see - their cards 
     createPlayersView() {
         document.getElementById("players").innerHTML = "";
         this.blackJackGame.players.forEach(player => {

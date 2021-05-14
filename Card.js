@@ -1,9 +1,10 @@
+// card class 
 class Card {
     constructor(rank, suit) {
         this.rank = rank;
         this.suit = suit.toLowerCase();
     }
-
+// icon for cards 
     getIcon() {
         if(this.suit == "hearts") {
             return "♥"
