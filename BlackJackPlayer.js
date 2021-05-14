@@ -1,3 +1,6 @@
+// my dev friend helped me alot with this part of creating the methods for the buttons and thr DOM 
+
+
 class BlackJackPlayer {
     // a blackjack player should receive a name when created
     // a black jack player's hand is empty until receiving cards from a dealer

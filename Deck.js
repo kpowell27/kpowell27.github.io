@@ -1,5 +1,5 @@
 class Deck {
-    
+    // create the deck 
     // upon construction, create 52 cards: 13 ranks x 4 suits
     constructor() {        
         const suits = ["hearts", "diamonds", "spades", "clubs"]

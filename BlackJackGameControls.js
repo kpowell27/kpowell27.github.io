@@ -1,4 +1,7 @@
 // the purpose of this class is to manipulate the DOM by evaluating the `Game` state
+
+//// https://codepen.io/lesbrarianism/pen/bGEbY is where I got the style of my css
+
 class BlackJackGameControls {
     constructor() {
         this.blackJackGame = null;
