@@ -1,5 +1,5 @@
 // the purpose of this class is to manipulate the DOM by evaluating the `Game` state
-
+// dev friend help me set up this blackjackgame controls class
 //// https://codepen.io/lesbrarianism/pen/bGEbY is where I got the style of my css
 
 class BlackJackGameControls {
